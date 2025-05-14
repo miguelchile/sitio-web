@@ -977,3 +977,15 @@ input.Enter_text::placeholder {
 .margin_90 {
     margin: 90px 0px;
 }
+
+.mensaje_mail {
+    width: 100%;
+    float:left;
+    background-color: #f1fafb;
+    height: auto;
+    padding: 30px;
+    text-align: center;
+}
+.mensaje_mail a {
+    color: blue;
+}
