@@ -989,3 +989,23 @@ input.Enter_text::placeholder {
 .mensaje_mail a {
     color: blue;
 }
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.6);
+  }
+  .modal-content {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 15% auto;
+    width: 90%;
+    max-width: 400px;
+  }
+  .modal.show { display: block; }
