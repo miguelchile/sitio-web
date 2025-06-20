@@ -63,7 +63,7 @@ a {
   bottom: 60px; /* encima del botón de WhatsApp */
   right: 20px;
   z-index: 100;
-  background-color: #28d9e6; /* café oscuro */
+  background-color: #28d9e6;
   color: white;
   border: none;
   border-radius: 50%;
@@ -80,7 +80,7 @@ a {
 }
 
 
- 
+
 
 /* BOTON PARA VOLVER AL INICIO */
 
@@ -253,9 +253,58 @@ button {
     padding: 10px 0px 25px 0px;
     background-repeat: no-repeat;
 } */
+ 
+.logo {
+    width: 42%;
+    float: left;
+    z-index: 2;
 
+}
 
+.bg-light {
+    /* background-color: transparent !important; */
+    background-color: #404446b0 !important;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 20px;
+    padding-left: 20px;
+    color: #fcfcfc;
+    font-size: 18px;
+    z-index: 2;
+    position: relative;
+    /* background-color: #7676767c; */
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: #61a2d8;
+}
+
+.navbar {
+    padding: .5rem 70px;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: #61a2d8;
+}
+
+.banner_section {
+    width: 100%;
+    float: left;
+    padding-bottom: 105px;
+    text-align:center;
+    z-index: 2;
+    position: relative;
+    justify-content: center;
+}
+
+.banner_section .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Fondo Difuminado */
 .header_section {
+    position: relative;
     width: 100%;
     float: left;
     /* background-image: url(../images/banner-bg.png); */
@@ -266,53 +315,21 @@ button {
     overflow: hidden;
     padding: 10px 0px 25px 0px;
     background-repeat: no-repeat;
+    z-index: 0;
 }
-
-/* .header_section::after {
+.header_section::after {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(85, 183, 228, 0.8);
-} */
-
-
-
-
-.logo {
-    width: 42%;
-    float: left;
+    background-color: rgba(132, 202, 248, 0.527);
+    z-index: 1;
+    pointer-events: none;
 }
 
-.bg-light {
-    background-color: transparent !important;
-}
-
-.navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 20px;
-    padding-left: 20px;
-    color: #fcfcfc;
-    font-size: 18px;
-}
-.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
-    color: #15e4d0;
-}
-
-.navbar {
-    padding: .5rem 70px;
-}
-.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
-    color: #15e4d0;
-}
-
-.banner_section {
-    width: 100%;
-    float: left;
-    padding-bottom: 105px;
-    text-align: end;
-}
+/* Fin Fondo Difuminado */
 
 .images_1 {
     width: 80%;
@@ -328,6 +345,8 @@ button {
     font-weight: bold;
     line-height: 60px;
     padding-top: 120px;
+    z-index: 3;
+    position: relative;
 }
 
 .banner_text {
@@ -336,17 +355,22 @@ button {
     font-size: 16px;
     margin: 0px;
     color: #ffffff;
+    z-index: 3;
+    position: relative;
 }
 
 .btn_main {
     width: 100%;
     float: left;
     margin-top: 30px;
+    z-index: 3;
+    position: relative;
+    text-align: center;
 }
 
 .more_bt {
     width: 170px;
-    float: left;
+    float: end;
 }
 
 .more_bt a {
@@ -361,8 +385,12 @@ button {
 
 .contact_bt {
     width: 170px;
-    float: left;
+    /* float: left; */
     margin-left: 15px;
+    justify-content: center;
+    text-align: end;
+    align-items: end;
+    display: inline-block;
 }
 
 .contact_bt a {
@@ -370,14 +398,17 @@ button {
     float: left;
     font-size: 18px;
     color: #f6f8f8;
-    background-color: #252525;
+    border: 1px solid #ffffff;
+    background-color: transparent;
     text-align: center;
     padding: 10px 0px;
+
 }
 
 .contact_bt a:hover {
-    color: #f6f8f8;
-    background-color: #4bc5b8;
+    /* color: #f6f8f8; */
+    border: 0px #00000000;
+    background-color: #61a2d8;
 }
 
 #main_slider .carousel-control-prev:hover,
@@ -386,12 +417,16 @@ button {
 #main_slider .carousel-control-next:focus {
     border: 4px solid #4bc5b8;
     color: #4bc5b8;
+    z-index: 6;
+    position: relative;
 }
 
 #main_slider a.carousel-control-next {
     position: absolute;
     left: 200px;
     top: 85%;
+    z-index: 6;
+
 }
 
 #main_slider a.carousel-control-prev {
@@ -400,6 +435,7 @@ button {
     top: 85%;
     border: 4px solid #4bc5b8;
     color: #4bc5b8;
+    z-index: 6;
 }
 
 #main_slider .carousel-control-prev,
@@ -411,6 +447,8 @@ button {
     font-size: 30px;
     color: #000;
     border-radius: 100%;
+    z-index: 6;
+    position: relative;
 }
 
 .health_section {
@@ -425,6 +463,8 @@ button {
     font-size: 40px;
     color: #252525;
     font-weight: bold;
+    position: relative;
+    z-index: 2;
 }
 
 .health_text {
@@ -882,21 +922,27 @@ button {
 #my_slider .carousel-control-next:focus {
     background-color: #19e9d9;
     color: #ffffff;
+    z-index: 2;
+    position: relative;
 }
 
 #my_slider a.carousel-control-next {
-    position: absolute;
+    /* position: absolute; */
     left: 490px;
     top: 70%;
     background-color: #19e9d9;
     color: #ffffff;
+    z-index: 2;
+    position: relative;
 }
 
 #my_slider a.carousel-control-prev {
-    position: absolute;
+    /* position: absolute; */
     left: 490px;
     top: 84%;
     background-color: #252525;
+    z-index: 2;
+    position: relative;
 }
 
 #my_slider .carousel-control-prev,
@@ -907,6 +953,8 @@ button {
     opacity: 1;
     font-size: 30px;
     color: #ffffff;
+    z-index: 2;
+    position: relative;
 }
 
 .footer_section {
